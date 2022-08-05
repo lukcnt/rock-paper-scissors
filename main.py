@@ -1,4 +1,5 @@
 import random
+import art
 
 # Begining of the game.
 # Instead of let the user write "rock", "paper" or "scissors" I choose
@@ -20,3 +21,19 @@ elif user_choice == "2":
     user_choice = "Scissors"
 else:
     print("The chosen option isn't valid.")
+
+# Print the art of the user choice.
+if user_choice == "Rock":
+    print(art.rock)
+elif user_choice == "Paper":
+    print(art.paper)
+else:
+    print(art.scissors)
+
+# Print the art of the computer choice.
+if computer_choice == "Rock":
+    print(f"Computer chose:\n{art.rock}\n")
+elif computer_choice == "Paper":
+    print(f"Computer chose:\n{art.paper}\n")
+else:
+    print(f"Computer chose:\n{art.scissors}\n")
