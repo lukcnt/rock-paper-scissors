@@ -10,3 +10,13 @@ user_choice = input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for S
 # Randomly select the computer option.
 possibilities = ["Rock", "Paper", "Scissors"]
 computer_choice = random.choice(possibilities)
+
+# Switched the values for better code readability.
+if user_choice == "0":
+    user_choice = "Rock"
+elif user_choice == "1":
+    user_choice = "Paper"
+elif user_choice == "2":
+    user_choice = "Scissors"
+else:
+    print("The chosen option isn't valid.")
