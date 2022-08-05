@@ -1,7 +1,7 @@
 import random
 import art
 
-# Begining of the game.
+# Beginning of the game.
 # Instead of let the user write "rock", "paper" or "scissors" I choose
 # represent each one with the numbers "0", "1" and "2", that way I believe
 # that is easier for the user and also lowers the chance of they making a
@@ -32,8 +32,27 @@ else:
 
 # Print the art of the computer choice.
 if computer_choice == "Rock":
-    print(f"Computer chose:\n{art.rock}\n")
+    print(f"Computer chose:\n{art.rock}")
 elif computer_choice == "Paper":
-    print(f"Computer chose:\n{art.paper}\n")
+    print(f"Computer chose:\n{art.paper}")
 else:
-    print(f"Computer chose:\n{art.scissors}\n")
+    print(f"Computer chose:\n{art.scissors}")
+
+# Determine the winner.
+if user_choice == computer_choice:
+    print("It's a draw!!")
+elif user_choice == "Rock":
+    if computer_choice == "Scissors":
+        print("You win!!!")
+    else:
+        print("You lose!")
+elif user_choice == "Paper":
+    if computer_choice == "Rock":
+        print("You win!!!")
+    else:
+        print("You lose!")
+elif user_choice == "Scissors":
+    if computer_choice == "Paper":
+        print("You win!!!")
+    else:
+        print("You lose!")
